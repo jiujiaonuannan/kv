@@ -14,4 +14,4 @@ pub trait Storage {
     fn get_all(&self, table: &str) -> Result<Vec<Kvpair>, KvError>;
     /// 遍历 HashTable，返回 kv pair 的 Iterator
     fn get_iter(&self, table: &str) -> esult<Box<dyn Iterator<Item = Kvpair>>, KvError>;
-}R
+}

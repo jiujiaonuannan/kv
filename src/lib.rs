@@ -7,8 +7,6 @@ pub use pb::abi::*;
 pub use storage::*;
 
 #[cfg(test)]
-
-#[cfg(test)]
 mod tests {
     use super::*;
 
@@ -81,4 +79,4 @@ mod tests {
             ]
         )
     }
-}!
+}
