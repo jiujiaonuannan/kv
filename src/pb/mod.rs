@@ -6,7 +6,6 @@ use http::StatusCode;
 
 use crate::KvError;
 
-
 impl CommandRequest {
 	/// 创建 HGET 命令
 	pub fn new_hget(table: impl Into<String>, key: impl Into<String>) -> Self {
@@ -66,7 +65,6 @@ impl From<&str> for Value {
     }
 }
 
-
 /// 从 i64转换成 Value
 impl From<i64> for Value {
 	fn from(i: i64) -> Self {
@@ -75,7 +73,6 @@ impl From<i64> for Value {
 			}
 	}
 }
-
 
 /// 从 Value 转换成 CommandResponse
 impl From<Value> for CommandResponse {
